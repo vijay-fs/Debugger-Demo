@@ -6,8 +6,12 @@ document.getElementById('addBtn').addEventListener('click', function () {
         document.getElementById('result').textContent = 'Error: Both inputs are required.';
         return;
     }
-
-    // Mistake: Treat num1 and num2 as strings, leading to concatenation instead of addition
-    const sum = num1 + num2; // This will concatenate strings, e.g., "5" + "3" = "53"
+    const sum = num1 + num2;
     document.getElementById('result').textContent = `Result: ${num1} + ${num2} = ${sum}`;
 });
+
+// Expected Output: "Result: 5 + 3 = 8"
+// Actual Output: "Result: 5 + 3 = 53"
+
+
+
